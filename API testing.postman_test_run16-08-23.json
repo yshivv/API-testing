@@ -1,0 +1,201 @@
+{
+	"id": "80f2a5f0-2b8b-4492-aef8-1130180a69f0",
+	"name": "API testing",
+	"timestamp": "2023-08-16T11:51:04.899Z",
+	"collection_id": "26518024-cccbb3c1-57cf-4bb7-ab41-bbbcc2d88a6f",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-08-16T11:51:00.525Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bf7d6237-27fa-4957-b651-af97f4812ce4",
+			"name": "Update a user",
+			"url": "https://gorest.co.in/public/v1/users/4474701",
+			"time": 1092,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body contains the updated user object": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains the updated user object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1092
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body contains the updated user object": true
+				}
+			]
+		},
+		{
+			"id": "67af4561-71e4-41b6-a389-0189e855df28",
+			"name": "Delete user",
+			"url": "https://gorest.co.in/public/v1/users/4474675",
+			"time": 569,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				569
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "7534ef8b-ec22-4a9f-b6c7-bf9d23ad2c6e",
+			"name": "Create a new user",
+			"url": "https://gorest.co.in/public/v1/users",
+			"time": 633,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response body contains the updated user object": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains the updated user object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				633
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response body contains the updated user object": true
+				}
+			]
+		},
+		{
+			"id": "944e549c-fd72-4283-8d05-51adaa10c420",
+			"name": "List Users",
+			"url": "https://gorest.co.in/public/v1/users",
+			"time": 590,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body contains the list of users": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains the list of users": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				590
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body contains the list of users": true
+				}
+			]
+		},
+		{
+			"id": "85f60333-88ca-46d0-9999-3372eede32a2",
+			"name": "List Users by id",
+			"url": "https://gorest.co.in/public/v1/users/4471619",
+			"time": 342,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body contains the list of users": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains the list of users": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				342
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body contains the list of users": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3226,
+	"collection": {
+		"requests": [
+			{
+				"id": "bf7d6237-27fa-4957-b651-af97f4812ce4",
+				"method": "PUT"
+			},
+			{
+				"id": "67af4561-71e4-41b6-a389-0189e855df28",
+				"method": "DELETE"
+			},
+			{
+				"id": "7534ef8b-ec22-4a9f-b6c7-bf9d23ad2c6e",
+				"method": "POST"
+			},
+			{
+				"id": "944e549c-fd72-4283-8d05-51adaa10c420",
+				"method": "GET"
+			},
+			{
+				"id": "85f60333-88ca-46d0-9999-3372eede32a2",
+				"method": "GET"
+			}
+		]
+	}
+}
